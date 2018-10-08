@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>TicTacToe</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+     
+      <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   <link rel="stylesheet" type="text/css" href="game.css" />
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: grey">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="navbar-brand" href="#">A02 Assignment</div>
+      <a class="navbar-brand" href="index.html">About Me</a>
+     
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tic-Tac-Toe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+    <header>
+      <h1>Tic Tac Toe</h1>
+      <h2>Play your game.Have fun!!!</h2>
+   </header>
+  </div>
+  <div id="winnerDisplay" class="winner_Status"></div>
+  <main>
+
+    <div class="box" id="upper-left"></div>
+    <div class="box" id="upper-mid"> </div>
+    <div class="box" id="upper-right"> </div>
+
+    <div class="box" id="center-left"> </div>
+    <div class="box" id="center-mid"> </div>
+    <div class="box" id="center-right"> </div>
+
+    <div class="box" id="lower-left"> </div>
+    <div class="box" id="lower-mid"> </div>
+    <div class="box" id="lower-right"> </div>
+  </main>
+  <div class="playbutton">
+    <button class="btn btn-primary btn-play" onclick="playGame()">Play</button><br><br>
+  </div>
+  <aside>
+
+    <div>
+      <h2>Specification</h2>
+      <div class="box">
+        <ul>
+          <li>Uses full-width header and footer.</li>
+          <li>Uses main 3 x 3 css grid, each with a section.</li>
+          <li>When user clicks a childless section, it adds an X.</li>
+          <li>If the move was valid, it selects a section for the computer and adds an O.</li>
+        </ul>
+        <ol>
+          <li>Improve the computer's selection algorithm.</li>
+          <li>Add an algorithm to check for a winner.</li>
+          <li>If winner, announce the winner and end the game.</li>
+          <li>Add "Play again?" button to clear the board.</li>
+          <li>Combine AddX and AddO into a single function.</li>
+        </ol>
+      </div>
+    </div>
+  </aside>
+  <footer>
+    <h4>
+      <span>&copy; Srujana Gattu 2018</span>
+      <span>&diams;</span>
+      <a href="https://github.com/profcase/web-tic-tac-toe">Source</a>
+      <span>&diams;</span>
+      <a href="https://profcase.github.io/web-tic-tac-toe/">Demo</a>
+    </h4>
+
+  </footer>
+  <script src="./game.js" defer></script>
+
+</body>
+
+</html>
